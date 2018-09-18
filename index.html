@@ -1,9 +1,10 @@
 <html>
   <head>
     <script>
-      function myFunction (){
-        var x = document.getElementById("input");
-        x.value = x.value.toUpperCase();
+      function confirmInput() {
+    input = document.forms[0].input.value;
+    alert("Hello " + fname + "The password is correct! You will now be redirected to https://leam01123.github.io/primo.github.io/");
+}
     </script>
   </head>
       <body>
@@ -13,7 +14,7 @@
           }
         </style>
         <p id="tt">Hi;<br>This page is private<br>If you want to get into this web page you must put the password</p>
-        <form>
+        <form onsubmit="confirmInput()" action="https://www.w3schools.com/">
           <p>Put here the password:</p><br>
           <input type="text" id="input" onkeyup="myFunction()"><br>
           <input type="reset" value="reset">
