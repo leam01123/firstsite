@@ -13,8 +13,18 @@
       <body>
         <style>
           body{
-            background-color:rgb(250,0,0);
+            background-color:rgb(333,0,0);
+            animation-name:sfondo;
+            animation-duration:10s;
           }
+          @ keyframes sfondo{
+            0%    {background-color:white}
+            25%   {background-color:yellow}
+            50%   {background-color:red}
+            75%   {background-color:purple}
+            100%  {background-color:black}
+          }
+          
         </style>
         <p id="tt">Hi;<br>This page is private<br>If you want to get into this web page you must put the password</p>
         <form onsubmit=pp()>
