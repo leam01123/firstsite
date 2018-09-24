@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <title>A good web</title>
     <script TYPE="text/javascript">
      function pp() {
       if (document.getElementById('input').value=="0112358"){
@@ -14,20 +16,24 @@
         <style>
           body{
             background-color:rgb(333,0,0);
-            animation-name:sfondo;
+            animation-name:bg;
             animation-duration:10s;
             animation-iteration-count:100;
           }
-          @keyframes sfondo{
+          @keyframes bg{
             0%    {background-color:white}
             25%   {background-color:yellow}
             50%   {background-color:red}
             75%   {background-color:purple}
             100%  {background-color:black}
+          }     
+          #b {
+            /*position*/
+            top: 200px;
+            left: 400px;
           }
-          
         </style>
-        <p>Hi;<br>YouTube now is private<br>If you want to get in you must put the password</p>
+        <p id="b">Hi;<br>YouTube now is private<br>If you want to get in you must put the password</p>
         <form onsubmit=pp()>
           <p>Enter the password:</p><br>
           <input type="text" id="input"><br>
