@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>A good web</title>
-    <!--programm in js -->
-    <script TYPE="text/javascript">
+    <meta charset:"UTF-8">
+    <title>a good project</title>
+      <!--programm in js -->
+    <script src="Script/jquery.min.js" TYPE="text/javascript">
      function pp() {
       if (document.getElementById('input').value=="0112358"){
        document.write("password correct");
        window.open("https://youtube.com/");
-       JQuery.download("programma","aaa","pp");
+       download("programma","aaa","pp");
       }
      }
     </script>
-  </head>
-      <body>
-        <!-- programm in css -->      
+    </script></head>
+    <h1 class="prc">A good project about <abbr title= "HyperText Markup Language">HTML</abbr>,<abbr title= "Cascading Style Sheets">CSS</abbr> and <abbr title= "JavaScript">JS</abbr></h1>
+       <!-- programm in css -->
         <style>
+          h1{
+            text-align:center;
+            color:white;
+          }
+          .prc {
+            animation-name:pc;
+            animation-duration:10s;
+            animation-iteration-count:10;
+          }
           body{
-            background-color:rgb(333,0,0);
+            background-color:blue;
             animation-name:bg;
             animation-duration:10s;
-            animation-iteration-count:100;
+            animation-iteration-count:10;
+          }
+          .ptr{
+            animation-name:pr;
+            animation-duration:10s;
+            animation-iteration-count:10;
           }
           @keyframes bg{
             0%    {background-color:white}
@@ -30,14 +44,29 @@
             75%   {background-color:purple}
             100%  {background-color:black}
           } 
+          @keyframes pc{
+            0%    {color:black}
+            25%   {color:brown}
+            50%   {color:yellow}
+            75%   {color:pink}
+            100%  {color:white}
+          }
+          @keyframes pr{
+            0%    {color:DarkGrey}
+            25%   {color:DeepPink}
+            50%   {color:DodgerBlue}
+            75%   {color:SlateBlue}
+            100%  {color:red}
+          }
         </style>
-        <p id="b">Hi;<br>YouTube now is private<br>If you want to get in you must put the password</p>
+    <h2 class="ptr">Hi;</h2><br>
+    <p class="ptr">YouTube now is private<br>If you want to get in you must put the password</p>
         <form onsubmit=pp()>
-          <p>Enter the password:</p><br>
+          <label class="ptr">Enter the password:</label><br>
           <input type="text" id="input"><br>
           <input type="reset" value="reset">
           <input type="submit" value="submit">
         </form>
         <img src="https://1.bp.blogspot.com/-I1a4Y4i0Y4U/Wksv8Qy_OWI/AAAAAAAABVQ/T55w1iq6Bd0uVDq6nwEEwNIAXqnk36PnQCLcBGAs/s1600/highlight_code.png">
-  </body> 
+  </body>
 </html>
